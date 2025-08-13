@@ -1,0 +1,97 @@
+:root { --bg:#0f1115; --fg:#e6e7ea; --muted:#9aa0a6; --primary:#4f8cff; --error:#ff5c5c; }
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+.centered{min-height:100%;display:grid;place-items:center;padding:24px}
+.card{width:100%;max-width:420px;background:#151823;border:1px solid #202534;border-radius:16px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{margin:0 0 10px;font-size:24px}
+p{margin:8px 0}
+.muted{color:var(--muted);font-size:12px}
+.primary,.secondary{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 16px;border-radius:10px;border:1px solid transparent;font-weight:600;cursor:pointer}
+.primary{background:var(--primary);color:white}
+.primary:disabled{opacity:.65;cursor:not-allowed}
+.secondary{background:transparent;border-color:#334; color:#cdd0d5}
+.error{color:var(--error)}
+.app-wrap{max-width:880px;margin:0 auto;padding:24px}
+.app-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+
+.fancy-card {
+  background: linear-gradient(145deg, #151823, #0f1115);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fancy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.glow-btn {
+  font-size: 16px;
+  background: linear-gradient(90deg, #4f8cff, #7a5cff);
+  box-shadow: 0 0 12px rgba(79, 140, 255, 0.7);
+  transition: all 0.3s ease;
+}
+.glow-btn:hover {
+  background: linear-gradient(90deg, #7a5cff, #4f8cff);
+  box-shadow: 0 0 18px rgba(79, 140, 255, 1);
+}
+
+.footer-links {
+  margin-top: 18px;
+  text-align: center;
+}
+.footer-links span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.twitter-btn {
+  background: #1da1f2;
+  color: #fff;
+}
+.twitter-btn:hover {
+  background: #0d8ddb;
+}
+.github-btn {
+  background: #333;
+  color: #fff;
+}
+.github-btn:hover {
+  background: #242424;
+}
+.wallet-address {
+  font-family: monospace;
+  background: #1e2230;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #8ff0ff;
+  word-break: break-all;
+}
+
+.user-card {
+  background: #151823;
+  border: 1px solid #202534;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+.user-card h3 {
+  margin-top: 0;
+  color: #4f8cff;
+}
+
