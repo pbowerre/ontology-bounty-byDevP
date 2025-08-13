@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
 
   server: {
-  proxy: { "/api": "http://localhost:5179" }
+  proxy: { "/api": "https://ontology-bounty-bydevp.onrender.com" }
 }
 
 })

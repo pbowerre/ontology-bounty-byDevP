@@ -13,7 +13,7 @@ const NONCES = new Map<string, { nonce: string; createdAt: number }>();
 // Replace in prod
 const JWT_SECRET = process.env.JWT_SECRET || "dev_secret";
 const SERVER_NAME = "Ontology Bounty by dev. P";
-const SERVER_URL = "http://localhost:5179"; // dev
+const SERVER_URL = "https://ontology-bounty-bydevp.onrender.com"; // dev
 const CLOCK_SKEW_SEC = 60 * 5;
 
 app.post("/api/challenge", (req, res) => {
@@ -95,4 +95,4 @@ app.post("/api/verify", async (req, res) => {
 });
 
 const port = process.env.PORT || 5179;
-app.listen(port, () => console.log(`API on http://localhost:${port}`));
+app.listen(port, () => console.log(`API on https://ontology-bounty-bydevp.onrender.com`));
